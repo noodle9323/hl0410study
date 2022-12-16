@@ -27,6 +27,27 @@ Javascript ES6
 
 <br>
 
+## 폴더 구조 
+```bash
+🏠noodle9323/hl0410study  
+├── 📁Class
+│   ├── class_1.md
+│   ├── class_2.md
+│   ├── class_4.md
+│   ├── class_5.md
+│   ├── class_6_object_create.md
+│   ├── class_7.md
+│   ├── class_8_gettersetter.md
+│   └── class_9.md
+│
+├── 📁Closure 
+│   └── Closure.md
+│
+├── 📁Currying 
+│   └── Currying.md
+└── 
+``` 
+
 ## 기간
 2022년 하반기  
 
