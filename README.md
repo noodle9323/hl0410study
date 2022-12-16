@@ -43,9 +43,9 @@ Javascript ES6
 ├── 📁Closure 
 │   └── Closure.md
 │
-├── 📁Currying 
-│   └── Currying.md
-└── 
+└── 📁Currying    
+    └── Currying.md
+
 ``` 
 
 ## 기간
