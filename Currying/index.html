@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currying</title>
+</head>
+
+<body>
+  <div class="test"></div>
+  <script>
+    const renderHtmlTag = tagName => content => `<${tagName}>${content}</${tagName}>`
+
+    const renderDiv = renderHtmlTag('div');
+    const renderH1 = renderHtmlTag('h1');
+
+    const displayUI =
+      renderH1('this is h1 content')
+      + renderDiv('this is div content')
+
+    document.querySelector('.test').innerHTML += displayUI
+  </script>
+
+  <script>
+    const curriedFeed3 = name => feed =>
+      feed.map(item => {
+        return `${name}에게 ${item} 먹이를 주고 있다.`;
+      });
+    const myPuppy = curriedFeed3('멍멍이');
+    const resArray = myPuppy(['개껌', '닭고기', '츄르']);
+    console.log(resArray);
+  </script>
+</body>
+
+</html>
